@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pg1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="pg1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .skills-soft ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .skills-soft li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+        .skills-soft svg {
+            width: 150px; /* Increased size by 50% */
+            height: 150px; /* Increased size by 50% */
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .skills-soft circle {
+            fill: none;
+            stroke-width: 10;
+        }
+        .skills-soft .cbar {
+            stroke: #3498db;
+            stroke-dasharray: 282.743; /* Adjusted circumference for the new size (pi*90) */
+            transition: stroke-dashoffset 1s;
+        }
+        .skills-soft text {
+            font-size: 14px; /* Adjusted font size */
+            font-weight: bold;
+            text-anchor: middle;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <div class="base">
+            <div class="profile">
+                <div class="photo"><img src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp" /></div>
+                <div class="info">
+                    <h4 class="name">Gazi Hossain</h4><small class="job">Web Designer</small></div>
+            </div>
+            <div class="about">
+                <h3>About me</h3>With five years of experience turning ideas into successful campaigns, I thrive in dynamic environments. Outside of work, I love music and movies. Let's connect and create something amazing!</div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <div class="call"><i class="fa fa-phone"></i><span>(+1)000-000-000</span></div>
+                <div class="address"><i class="fa fa-map-marker-alt"></i><span>Queens, NY</span></div>
+                <div class="email"><i class="fa fa-envelope"></i><span style="font-size: 12px; text-align: center;">gazirhossain@gmail.com</span></div>
+                <div class="website"><a href="www.grh.com" target="_blank"><i class="fa fa-home"></i><span>www.grh.com</span></a></div>
+            </div>
+            <div class="follow">
+                <h3>Follow</h3>
+                <div class="box">
+                  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+              </div>
+        </div>
+        <div class="func">
+            <div class="work">
+                <h3><i class="fa fa-briefcase"></i>Work Experience</h3>
+                <ul>
+                    <li><span>Freelance Web Designer</span><small>Apr 2019- March 2021</small></li>
+                    <li><span>Lesson Coordinator</span><small>Mar 2021 - Jul 2022</small></li>
+                    <li><span>Design Assistant</span><small>Oct 2014 - Jul 2022</small></li>
+                </ul>
+            </div>
+            <div class="edu">
+                <h3><i class="fa fa-graduation-cap"></i>Education</h3>
+                <ul>
+                    <li><span>Maspeth High School</span><small>Nov 2022 - Jun 2024</small></li>
+                    <li><span>College</span><small>Sep 2024 - Now</small></li>
+                </ul>
+            </div>
+            <div class="skills-prog">
+                <h3><i class="fa fa-code"></i>Programming Skills</h3>
+                <ul>
+                    <li data-percent="90"><span>HTML & CSS</span>
+                        <div class="skills-bar">
+                            <div class="bar" style="width: 90%;"></div>
+                        </div>
+                    </li>
+                    <li data-percent="80"><span>Python</span>
+                        <div class="skills-bar">
+                            <div class="bar" style="width: 80%;"></div>
+                        </div>
+                    </li>
+                    <li data-percent="60"><span>JavaScript</span>
+                        <div class="skills-bar">
+                            <div class="bar" style="width: 60%;"></div>
+                        </div>
+                    </li>
+                    <li data-percent="65"><span>C++</span>
+                        <div class="skills-bar">
+                            <div class="bar" style="width: 65%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="skills-soft">
+                <h3><i class="fa fa-th-list"></i>Software Skills</h3>
+                <ul>
+                    <li data-percent="90">
+                    
+                        <svg viewbox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45"></circle>
+                            <circle class="cbar" cx="50" cy="50" r="45" style="stroke-dashoffset: calc(282.743 - (282.743 * 90) / 100);"></circle>
+                            <text class="circletext" x="50" y="50" dy=".3em" transform="rotate(90 50,50)" style="font-family: sans-serif; fill: #3d405b; font-size:10px;">Photoshop </text>
+                            
+                        </svg>
+                    </li>
+                    <li data-percent="90">
+                        <svg viewbox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45"></circle>
+                            <circle class="cbar" cx="50" cy="50" r="45" style="stroke-dashoffset: calc(282.743 - (282.743 * 85) / 100);"></circle>
+                            <text class="circletext" x="50" y="50" dy=".3em" transform="rotate(90 50,50)" style="font-family: sans-serif; fill: #3d405b; font-size:10px;">Illustrator</text>
+                        </svg>
+                    </li>
+                    <li data-percent="70">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45"></circle>
+                            <circle class="cbar" cx="50" cy="50" r="45" style="stroke-dashoffset: calc(282.743 - (282.743 * 70) / 100);"></circle>
+                            <text class="circletext" x="50" y="50" dy=".3em" transform="rotate(90 50,50)" style="font-family: sans-serif; fill: #3d405b; font-size:10px;">Animate </text>
+                        </svg>
+                    </li>
+                    <li data-percent="60">
+                        <svg viewbox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45"></circle>
+                            <circle class="cbar" cx="50" cy="50" r="45" style="stroke-dashoffset: calc(282.743 - (282.743 * 80) / 100);"></circle>
+                            <text class="circletext" x="50" y="50" dy=".3em" transform="rotate(90 50,50)" style="font-family: sans-serif; fill: #3d405b; font-size:10px;">Premiere Pro</text>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="interests">
+                <h3><i class="fa fa-star"></i>Interests</h3>
+                <div class="interests-items">
+                    <div class="draw"><i class="fa fa-paint-brush"></i><span>Draw</span></div>
+                    <div class="guitar"><i class="fa fa-guitar"></i><span>Guitar</span></div>
+                    <div class="movie"><i class="fa fa-film"></i><span>Movie</span></div>
+                    <div class="music"><i class="fa fa-headphones"></i><span>Music</span></div>
+                    <div class="game"><i class="fa fa-gamepad"></i><span>Game</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
