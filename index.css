@@ -1,44 +1,41 @@
 body {
     background-color: rgb(247, 241, 233);
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensures the container takes up full height */
+    height: 80px;
+    
 }
 
 .card {
     height: 350px;
     width: 250px;
+    top: 20%;
+    left: 50%;
     background-color: rgb(0, 0, 0);
+    position: absolute;
     cursor: pointer;
     user-select: none;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 5%;
-    margin: 20px;
-    transition: transform 0.3s;
 }
 
 .card1 {
+    left: 28%;
     background-image: url("1.png"); 
+    
 }
 
 .card2 {
+    left: 42%;
     background-image: url("2.png"); 
 }
 
 .card3 {
+    left: 56%;
     background-image: url("3.png"); 
 }
 
-#slideUpText1, #slideUpText2, #slideUpText3 {
+#slideUpText1 {
     opacity: 0;
     transition: opacity 0.5s, transform 0.5s;
     transform: translateY(20px);
@@ -48,84 +45,133 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+
+
 #slideUpText2 {
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateY(20px);
+    text-align: center  ;
+    font-size: 60px;
+    color: rgb(138, 145, 145);
+    font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
-    bottom: 200px;
+    bottom:200px;
+
 }
 
 #slideUpText3 {
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateY(20px);
+    text-align: center  ;
+    font-size: 60px;
+    color: rgb(138, 145, 145);
+    font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
-    bottom: 420px;
+    bottom:420px;
+    
+    
 }
 
-.box {
+.box1, .box2 {
     display: inline-block;
-    width: 100%; /* Make it full width on smaller screens */
-    max-width: 400px; /* Limit max width */
+    width: 400px;
     height: 200px;
     background-color: rgba(255, 0, 0, 0.5);
     margin: 20px;
     transition: opacity 0.5s, transform 0.5s;
+    position: relative;
+    top: 300px;
+   
+
+
+}
+
+.box3, .box4 {
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    background-color: rgba(255, 0, 0, 0.5);
+    margin: 20px;
+    transition: opacity 0.5s, transform 0.5s;
+    position: relative;
+    top:350px;
+   
+
+
+}
+
+.box5{
+
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    background-color: rgba(255, 0, 0, 0.5);
+    margin: 20px;
+    transition: opacity 0.5s, transform 0.5s;
+    position: relative;
+    top:350px;
+   
+
 }
 
 .back {
-    border-radius: 10%;
+
+border-radius: 10%;
+    display: inline-block;
     width: 100px;
     height: 50px;
     background-color: rgba(178, 236, 236, 0.5);
     transition: opacity 0.5s, transform 0.5s;
-    margin: 20px auto; /* Center the button */
+    position: absolute;
+    top: 180%;
+    right: 48%;
+    
+  
+
 }
+
 
 .hide {
     opacity: 0;
     transform: translateY(20px);
     display: none;
 }
-
 .unclickable {
     pointer-events: none;
 }
 
-.box1 {
-    background-image: url("4.png");
-    background-size: cover;
-    background-position: center;
+.box1{
+
+    background-image: url("4.png"); 
+    background-size: cover; /* Ensures the background image covers the entire box */
+    background-position: center; /* Centers the background image within the box */
 }
 
-.texting, .texting2 {
+.texting{
+
     font-size: 25px;
-    width: 100%; /* Full width on smaller screens */
-    max-width: 1200px; /* Limit max width */
+
+    width: 1200px;
     margin: auto;
     line-height: 45px;
+
+
+
+
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    #slideUpText1, #slideUpText2, #slideUpText3 {
-        font-size: 40px; /* Smaller font size */
-    }
 
-    .card {
-        width: 90%; /* Take up most of the screen width */
-    }
+.texting2{
 
-    .texting, .texting2 {
-        font-size: 20px; /* Smaller font size */
-    }
-}
+    font-size: 25px;
+    width: 1200px;
+    margin: auto;
+    line-height: 45px;
+    
 
-@media (max-width: 480px) {
-    #slideUpText1, #slideUpText2, #slideUpText3 {
-        font-size: 30px; /* Even smaller font size */
-    }
 
-    .card {
-        width: 95%; /* Even more width on small screens */
-    }
 
-    .texting, .texting2 {
-        font-size: 18px; /* Smaller font size */
-    }
+
 }
